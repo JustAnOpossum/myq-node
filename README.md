@@ -9,7 +9,7 @@ This module is made for people who have a Myq Chamberlain garage door opener.
 # Usage
 
 ```javascript
-let myq = require('node-chamberlain')
+let myq = require('myq-node')
 
 myq.login('email@example.com', 'password', 123456)
 //Email and password are reqired, device ID is optional
