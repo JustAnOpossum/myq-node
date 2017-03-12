@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ConnorTheFox/node-chamberlain.git"
+    "url": "git+https://github.com/ConnorTheFox/myq-node.git"
   },
   "keywords": [
     "chamberlain"
@@ -21,7 +21,7 @@
   "author": "connorthefox",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ConnorTheFox/node-chamberlain/issues"
+    "url": "https://github.com/ConnorTheFox/myq-node/issues"
   },
-  "homepage": "https://github.com/ConnorTheFox/node-chamberlain#readme"
+  "homepage": "https://github.com/ConnorTheFox/myq-node#readme"
 }
