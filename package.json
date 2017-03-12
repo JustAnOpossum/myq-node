@@ -1,10 +1,9 @@
 {
-  "name": "node-chamberlain",
-  "version": "0.1.0",
+  "name": "myq-node",
+  "version": "0.1.3",
   "description": "A module that lets you control your myq chamberlain garage door with node.",
   "main": "main.js",
   "dependencies": {
-    "myqnode": "^0.0.2",
     "request": "^2.81.0"
   },
   "devDependencies": {},
@@ -16,7 +15,8 @@
     "url": "git+https://github.com/ConnorTheFox/myq-node.git"
   },
   "keywords": [
-    "chamberlain"
+    "chamberlain",
+	"myq"
   ],
   "author": "connorthefox",
   "license": "MIT",

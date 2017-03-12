@@ -122,7 +122,7 @@ const getState = function(deviceId) {
             }
           }
           catch(e) {
-            rej(err)
+            rej(e)
           }
         }).catch(rej)
     }).catch(rej)
@@ -158,16 +158,15 @@ const openDoor = function(deviceId) {
     deviceId = deviceId || config.deviceId
         stateChange('open', deviceId).then(state => {
           try {
-            var parsed = JSON.parse(state)
-            if (parsed.ErrorMessage) {
-              rej(parsed.ErrorMessage)
+            if (state.ErrorMessage) {
+              rej(state.ErrorMessage)
             }
             else {
-              res({doorOpened: true, UpdatedTime: parsed.UpdatedTime})
+              res({doorOpened: true, UpdatedTime: state.UpdatedTime})
             }
           }
           catch(e) {
-            rej(err)
+            rej(e)
           }
         }).catch(rej)
   })
@@ -178,16 +177,15 @@ const closeDoor = function(deviceId) {
     deviceId = deviceId || config.deviceId
         stateChange('close', deviceId).then(state => {
           try {
-            var parsed = JSON.parse(state)
-            if (parsed.ErrorMessage) {
+            if (state.ErrorMessage) {
               rej(parsed.ErrorMessage)
             }
             else {
-              res({doorClosed: true, UpdatedTime: parsed.UpdatedTime})
+              res({doorClosed: true, UpdatedTime: state.UpdatedTime})
             }
           }
           catch(e) {
-            rej(err)
+            rej(e)
           }
         }).catch(rej)
   })
