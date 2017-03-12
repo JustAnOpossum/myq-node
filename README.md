@@ -2,7 +2,7 @@ This module is made for people who have a Myq Chamberlain garage door opener.
 
 # Install
 
-`npm i node-chamberlain -save`
+`npm i myq-node -save`
 
 # Usage
 
