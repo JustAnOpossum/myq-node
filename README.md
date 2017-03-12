@@ -1,5 +1,7 @@
 This module is made for people who have a Myq Chamberlain garage door opener.
 
+## This is made for API v 4.1. As of March 2017 it is working correctly.
+
 # Install
 
 `npm i myq-node -save`
