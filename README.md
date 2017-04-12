@@ -4,7 +4,7 @@ This module is made for people who have a Myq Chamberlain garage door opener.
 
 # Install
 
-`npm i myq-node -save`
+`npm i --save myq-node`
 
 # Usage
 
@@ -38,7 +38,7 @@ myq.closeDoor().then(door => {
 
 ## login(email, password[, deviceId])
 
-Promise, sets email address and password for future requests. deviceId is optional but will set them for other methods.
+Sets email address and password for future requests. deviceId is optional but will set them for other methods.
 
 ## getDevices()
 
