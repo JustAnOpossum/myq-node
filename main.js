@@ -70,7 +70,7 @@ function getToken() {
             } else {
                 res(code.SecurityToken)
             }
-        })
+        }).catch(rej)
     })
 }
 
