@@ -1,5 +1,5 @@
 ## NO LONGER WORKS!!!
-## Due to app updates it is imossible to packetsniff to get the new API endpoints.
+## Due to app updates it is impossible to packetsniff to get the new API endpoints.
 
 This module is made for people who have a Myq Chamberlain garage door opener.
 
