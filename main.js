@@ -42,7 +42,7 @@ function makeRequest(options, type, url) {
             if (!err && req.statusCode === 200) {
                 res(body)
             } else {
-              if (req.statusCode != 200) {
+              if (req && req.statusCode != 200) {
                 rej(JSON.stringify({resCode:req.statusCode, body: body}))
               }
               else {
@@ -70,7 +70,7 @@ function getToken() {
             } else {
                 res(code.SecurityToken)
             }
-        })
+        }).catch(rej)
     })
 }
 
